@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Insurance-Premium-Prediction
+Version: 0.0.1
+Author: Himanshu Banodha
+Author-email: himanshubanodha0.19@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: flask
