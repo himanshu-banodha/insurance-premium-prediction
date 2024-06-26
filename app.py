@@ -34,7 +34,8 @@ def predict_expenses():
 
         predict_pipeline=PredictPipeline()
         results=predict_pipeline.predict(pred_df)
-        return render_template('prediction.html', results=results[0])
+        premium='Premium :'
+        return render_template('prediction.html', results=results[0], premium=premium)
     
 
 if __name__=="__main__":
