@@ -10,11 +10,7 @@ app = application
 
 ## Route for a home page
 
-@app.route('/')
-def index():
-    return render_template('prediction.html')
-
-@app.route('/predictdata', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def predict_expenses():
     if request.method=='GET':
         return render_template('prediction.html')
@@ -30,7 +26,7 @@ def predict_expenses():
 
         )
         pred_df=data.get_data_as_data_frame()
-        print(pred_df)
+        # print(pred_df)
 
         predict_pipeline=PredictPipeline()
         results=predict_pipeline.predict(pred_df)
